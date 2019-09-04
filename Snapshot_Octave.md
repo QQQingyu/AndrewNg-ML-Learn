@@ -1,5 +1,5 @@
 
-### In Octave
+### Octave Snapshot
 
 Change the style of cursor: PS1('>> ')  
 Add ";" at the end of a line, could inhibit print.
@@ -23,13 +23,14 @@ prod(a)
 floor(a) and ceil(a)  
 
 Tricks:  
-size(A)  size(A,1)  
+size(A)  
+size(A,1)  
 The larger one of line and column: length(v)  
 C = [A B] equals to C = [A, B]  
 C = [A ; B]  
-A .* B       A.^2      1./A        A .* eye(9)  
+A .\* B&nbsp;&nbsp;&nbsp;A.^2&nbsp;&nbsp;&nbsp;1./A&nbsp;&nbsp;&nbsp;A .* eye(9)  
 [r,c] = find(A >= 7)  
-A .* eye(9)        sum(sum(A.* eye(9)))  
+Diagonal element Sum: A .\* eye(9); sum(sum(A.* eye(9)))  
 Variables in the current scope: who  
 whos(tell the Size, Bytes and Class)  
 clear feature all  
@@ -39,7 +40,8 @@ save hello.txt v -ascii % save as text (ASCII)
 load data: load featuresZ.dat / load('featuresX.dat')  
 
 Put all elements of A into a single vector: A( : )  
-C = [A B]/C = [A , B]      C = [A ; B]  
+C = [A B] or C = [A , B]  
+C = [A ; B]  
 
 Choose the largest of each column: max(A, [ ], 1)  
 Choose the largest of each line:   max(A, [ ], 2)  
@@ -47,33 +49,33 @@ Choose the largest element: max(max(A))or max(A(:))
 
 Pseudoinverse matrix: pinv(A)  
 
-plot(t,y1)    plot(t,y2,'r')  
-xlabel('time')    ylabel('value')  
+plot(t,y1)      
+plot(t,y2,'r')   
+xlabel('time')  
+ylabel('value')  
 legend('sin', 'cos')  
 title('my plot')  
 cd /Users/Glory/Desktop; print -dpng 'myPlot,png'  
 figure(1); plot(t, y1)  
 figure(2); plot(t, y2)  
-Divides plot a 1\*2 grid, access first element: subplot(1,2,1)  
-plot(t,y1)  
-subplot(1,2,2)  
-plot(t,y2)  
-axis([0.5 1 -1 1])  
-clf  
-A = magic(5)    imagesc(A)  
-imagesc(A), colorbar, colormap gray;  
-
+Divides plot a 1*2 grid, access first element: subplot(1,2,1)  
+access second element:subplot(1,2,2)  
+Set horizontal and vertical coordinates: axis([0.5 1 -1 1])  
+A = magic(5); imagesc(A); colorbar; colormap gray;  
+clf
 
 ```python
 for i = 1:10,  
 v(i) = 2^i;  
 end;  
-
+```
+```python
 while i <= 5,  
 v(i) = 100;  
 i = i+1;  
 end;  
-
+```
+```python
 if v(1) == 1,  
 disp('The value is one');  
 elseif v(i) == 2,  
@@ -81,7 +83,8 @@ disp('The value is two');
 else  
 disp('The value is not one or two.');  
 end;  
-
+```
+```python
 function y = squareThisNumber(x)  
 y = x^2;  
 function [y1,y2] = squareAndCubeThisNumber(x)  
