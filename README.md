@@ -1,5 +1,6 @@
 # AndrewNg-ML-Learn
-###### As one of the best materials for learning machine learning, AndrewNg gave a good guide to ML on cousera. This is a learning records of extraction points and assignment realization by Python.
-#### THis note consist of TWO parts:  
-- Knowledge point combing;  
-- Assignments by python.
+###### As one of the best materials for learning machine learning, AndrewNg have given a good guide to [ML on cousera](https://www.coursera.org/learn/machine-learning?). This is a set of learning records of extraction points and assignment realization by Python.
+#### This note consist of TWO parts:  
+- Knowledge points combing;  
+- Assignments by python.  
+
